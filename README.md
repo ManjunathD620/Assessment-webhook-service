@@ -128,7 +128,7 @@ cd Assessment-webhook-service
 2. **Install dependencies**
 
 ```bash
-npm install
+pip install -r requirements.txt
 ```
 
 3. **Set up environment variables**
@@ -140,27 +140,19 @@ cp .env.example .env
 Edit `.env` file:
 
 ```env
-PORT=3000
 MONGODB_URI=mongoUrl
-NODE_ENV=development
 ```
 
 4. **Run the application**
 
 ```bash
-npm start
-```
-
-For development with auto-reload:
-
-```bash
-npm run dev
+python run.py
 ```
 
 5. **Access the API**
 
-- API: http://localhost:3000
-- Health Check: http://localhost:3000/
+- API: http://localhost:8000
+- Health Check: http://localhost:8000/
 
 ## 🧪 Testing the API
 
