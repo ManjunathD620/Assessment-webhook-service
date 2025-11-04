@@ -159,7 +159,7 @@ python run.py
 ### Test Webhook Reception
 
 ```bash
-curl -X POST "https://assessment-webhook-service.onrender.com/v1/webhooks/transactions" \
+curl -X POST "https://assessment-webhook-service-1.onrender.com/v1/webhooks/transactions" \
   -H "Content-Type: application/json" \
   -d '{
     "transaction_id": "test_txn_001",
@@ -173,17 +173,17 @@ curl -X POST "https://assessment-webhook-service.onrender.com/v1/webhooks/transa
 ### Check Transaction Status
 
 ```bash
-curl "https://assessment-webhook-service.onrender.com/v1/transactions/test_txn_001"
+curl "https://assessment-webhook-service-1.onrender.com/v1/transactions/test_txn_001"
 ```
 
 ### Get All Transactions
 
 ```bash
-curl "https://assessment-webhook-service.onrender.com/v1/transactions"
+curl "https://assessment-webhook-service-1.onrender.com/v1/transactions"
 ```
 
 ### Health Check
 
 ```bash
-curl "https://assessment-webhook-service.onrender.com/"
+curl "https://assessment-webhook-service-1.onrender.com"
 ```
