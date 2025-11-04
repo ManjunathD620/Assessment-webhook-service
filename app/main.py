@@ -1,9 +1,8 @@
 from fastapi import FastAPI, HTTPException, BackgroundTasks
 from datetime import datetime
 import logging
-from .models import TransactionCreate, TransactionResponse, WebhookResponse, HealthResponse
-from .services import transaction_service
-
+from app.models import TransactionCreate, TransactionResponse, WebhookResponse, HealthResponse
+from app.services import transaction_service
 logging.basicConfig(
     level=logging.INFO,  
     format="%(asctime)s [%(levelname)s] : %(message)s",
